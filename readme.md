@@ -3,6 +3,10 @@
 > 导入: pip install -r requirements.txt
 
 ### Python虚拟环境:
+- 安装虚拟环境: virtualenvwrapper-win :
+    - 进入到Python安装目录中的Scripts目录下执行: pip install virtualenvwrapper-win
+    - 执行workon命令查看是否安装成功: workon
+    - 配置环境变量及后续虚拟环境存放位置: WORKON_HOME:E:\Developer_Tools\PythonEnvs
 - 创建python指定版本虚拟环境:如下命令
     - mkmirtualenv "虚拟环境名称"
     - mkvirtualenv --python= E:\Developer_Tools\Python\Python36\python.exe "虚拟环境名称"
