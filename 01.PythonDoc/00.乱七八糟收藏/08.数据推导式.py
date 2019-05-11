@@ -27,7 +27,10 @@ print(list5)
 list6 = [ [1+i,2+i,3+i] for i in range(0,98) if i % 3 == 0]
 print(list6)
 
+### 字典推导式
+cookie =  "anonymid=jv6dyp5urxfloa; depovince=TJ; _r01_=1; JSESSIONID=abcEiDBh_LLekhZF2P3Pw; ick_login=c81f36f8-e2f0-4cf8-accd-3ddb2c5737f9; first_login_flag=1; ln_hurl=http://head.xiaonei.com/photos/0/0/men_main.gif; jebe_key=f6c56656-a49d-4595-8574-38c165c15614%7C5b34e73601acb25887c4068b9cf69955%7C1556785777949%7C1%7C1556785780059; wp_fold=0; ln_uact=123309778@qq.com; jebecookies=3627846e-80f2-4b1a-8df4-2ef983db3717|||||; _de=CBAB31EED2C8716972FFEFECAA50653A696BF75400CE19CC; p=87a5e6b37fa38cdef7b27d11c5b684f32; t=93fab4e742e141192b9422897df4fe232; societyguester=93fab4e742e141192b9422897df4fe232; id=893394172; xnsid=884f4b2d; ver=7.0; loginfrom=null"
 
+print({i.split("=")[0]:i.split("=")[1] for i in cookie.split("; ") })
 
 
 
