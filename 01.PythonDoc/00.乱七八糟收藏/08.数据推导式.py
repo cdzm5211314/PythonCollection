@@ -3,6 +3,15 @@
 # @Author: Administrator
 # @Date: 2018-05-01 16:10
 
+# 列表推导式: [list]
+# 规范: variable = [out_exp for out_exp in input_list if out_exp == 2]
+
+# 字典推导式: {key:value}
+# 快速切换地点的键与值: {v: k for k, v in some_dict.items()}
+
+# 集合推导式: {set}
+# 示例: squared = {x**2 for x in [1, 1, 2]}
+
 ### range(1,10) 获取一个包头不包尾的范围对象
 
 ### 生成一个1-9的数字列表
@@ -32,6 +41,7 @@ cookie =  "anonymid=jv6dyp5urxfloa; depovince=TJ; _r01_=1; JSESSIONID=abcEiDBh_L
 
 print({i.split("=")[0]:i.split("=")[1] for i in cookie.split("; ") })
 
+# ******************************************************************* #
 
 
 
