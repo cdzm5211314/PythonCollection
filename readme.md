@@ -1,6 +1,6 @@
 ### 导出/导入虚拟环境模块包:
 > 导出: pip freeze > requirements.txt  
-> 导入: pip install -r requirements.txt
+> 导入: pip install -r requirements.txt  
 
 ### Python虚拟环境:
 - 安装虚拟环境: virtualenvwrapper-win :
@@ -89,27 +89,28 @@
 ******************************************************************************************************************
 ### Flask框架内置模块与函数: pip install flask
 > from flask import Flask  
-> from flask import render_template # 返回.html模版
-> from flask import redirect    # url重定向
-> from flask import url_for # url反向路由
-> from flask import make_response
-> from flask import request
-> from flask import session
+> from flask import render_template # 返回.html模版  
+> from flask import redirect    # url重定向  
+> from flask import url_for # url反向路由  
+> from flask import make_response  
+> from flask import request  
+> from flask import session  
  
 
 - Flask框架扩展(表单): pip install flask_script
     - from flask_script import Manager 
 
 
-- Flask框架扩展(表单): pip install flask_wtf
-    - from flask_wtf import FlaskForm
-    - from wtforms import SubmitField,StringField,PasswordField # 表单字段
-    - from wtforms.validators import DataRequired,EqualTo   # 表单验证
+- Flask框架扩展(表单): pip install flask-wtf
+    - from flask_wtf import FlaskForm   # 页面表单模型类
+    - from wtforms import StringField,PasswordField # 表单字段类型
+    - from wtforms import SubmitField  # 表单提交按钮
+    - from wtforms.validators import DataRequired,EqualTo   # 表单字段验证器
 
 
 - Flask框架扩展(数据库): pip install flask-sqlalchemy
-    - from flask_sqlalchemy import SQLAlchemy   # 使用数据库前提
-        - pip install flask-mysqldb # 使用mysql数据库
+    - from flask_sqlalchemy import SQLAlchemy   # 强大的关系型数据库框架
+        - pip install flask-mysqldb # 使用mysql数据库需安装
 
 
 - Flask框架扩展(邮件):
