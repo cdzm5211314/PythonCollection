@@ -127,7 +127,10 @@
     - from flask_mail import Mail
     - from flask_mail import Message
 
-
+- **Flask程序部署**
+    - 安装gunicorn: pip install gunicorn
+    - 程序部署(守护进程): gunicorn -w 4 -b 127.0.0.1:5000 -D --access-logfiles ./logs/logfile.log 运行文件名称:Flask程序实例名
+    - 程序部署: gunicorn -w 4 -b 127.0.0.1:5000 --access-logfiles ./logs/logfile.log 运行文件名称:Flask程序实例名
 
 
 
