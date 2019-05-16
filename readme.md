@@ -89,18 +89,15 @@
 ******************************************************************************************************************
 ### Flask框架内置模块与函数: pip install flask
 > from flask import Flask  
+> from flask import make_response  
 > from flask import render_template # 返回.html模版  
 > from flask import redirect    # url重定向  
 > from flask import url_for # url反向路由  
-> from flask import make_response  
-> from flask import request  
+> from flask import jsonify   # 返回json字符串     
+> from flask import request  # 获取请求信息  
 > from flask import session  
  
-
-- Flask框架扩展(表单): pip install flask_script
-    - from flask_script import Manager 
-
-
+ 
 - Flask框架扩展(表单): pip install flask-wtf
     - from flask_wtf import FlaskForm   # 页面表单模型类
     - from wtforms import StringField,PasswordField # 表单字段类型
@@ -108,13 +105,26 @@
     - from wtforms.validators import DataRequired,EqualTo   # 表单字段验证器
 
 
-- Flask框架扩展(数据库): pip install flask-sqlalchemy
+- Flask框架扩展(数据库框架): pip install flask-sqlalchemy
     - from flask_sqlalchemy import SQLAlchemy   # 强大的关系型数据库框架
-        - pip install flask-mysqldb # 使用mysql数据库需安装
+        - MySQL数据库 依赖于 flask-sqlalchemy框架 
+        - MySQL数据库的安装: pip install flask-mysqldb 
 
 
-- Flask框架扩展(邮件):
-    - from flask_mail import Mail, Message
+- Flask框架扩展(表单): pip install flask-script
+    - from flask_script import Manager  # 脚本管理工具
+    - from flask_script import Shell 
+
+
+- Flask框架扩展(数据库扩展): pip install flask-migrate  
+    - flask-migrate 依赖于 flask-script [需安装: pip install flask-script]
+    - from flask-migrate import Migrate  # 数据库的迁移,回退...等工具
+    - from flask-migrate import MigrateCommand  # 数据库执行者命令
+
+
+- Flask框架扩展(邮件): pip install flask-mail
+    - from flask_mail import Mail
+    - from flask_mail import Message
 
 
 
