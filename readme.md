@@ -39,7 +39,7 @@
 - import csv    # csv文件读取与写入
 - import threading  # 多线程
 - from queue import Queue   # 队列
-
+- import unittest   # 单元测试
 
 
 ******************************************************************************************************************
@@ -96,6 +96,7 @@
 > from flask import jsonify   # 返回json字符串     
 > from flask import request  # 获取请求信息  
 > from flask import session  
+> from flask import Blueprint # 蓝图:用于实现单个应用的视图,模版,静态文件的集合  
  
  
 - Flask框架扩展(表单): pip install flask-wtf
