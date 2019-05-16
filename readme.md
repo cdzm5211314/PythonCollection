@@ -71,7 +71,7 @@
 
 
 
-# Django框架内置命令:
+### Django框架内置命令:
 - django-admin startproject projectname             # 创建django工程项目
 - python manage.py startapp appname                 # 创建app应用
 - python manage.py makemigrations                   # 生成迁移文件
@@ -99,31 +99,31 @@
 > from flask import Blueprint # 蓝图:用于实现单个应用的视图,模版,静态文件的集合  
  
  
-- Flask框架扩展(表单): pip install flask-wtf
+- **Flask框架扩展(表单): pip install flask-wtf**
     - from flask_wtf import FlaskForm   # 页面表单模型类
     - from wtforms import StringField,PasswordField # 表单字段类型
     - from wtforms import SubmitField  # 表单提交按钮
     - from wtforms.validators import DataRequired,EqualTo   # 表单字段验证器
 
 
-- Flask框架扩展(数据库框架): pip install flask-sqlalchemy
+- **Flask框架扩展(数据库框架): pip install flask-sqlalchemy**
     - from flask_sqlalchemy import SQLAlchemy   # 强大的关系型数据库框架
         - MySQL数据库 依赖于 flask-sqlalchemy框架 
         - MySQL数据库的安装: pip install flask-mysqldb 
 
 
-- Flask框架扩展(表单): pip install flask-script
+- **Flask框架扩展(表单): pip install flask-script**
     - from flask_script import Manager  # 脚本管理工具
     - from flask_script import Shell 
 
 
-- Flask框架扩展(数据库扩展): pip install flask-migrate  
+- **Flask框架扩展(数据库扩展): pip install flask-migrate**  
     - flask-migrate 依赖于 flask-script [需安装: pip install flask-script]
     - from flask-migrate import Migrate  # 数据库的迁移,回退...等工具
     - from flask-migrate import MigrateCommand  # 数据库执行者命令
 
 
-- Flask框架扩展(邮件): pip install flask-mail
+- **Flask框架扩展(邮件): pip install flask-mail**
     - from flask_mail import Mail
     - from flask_mail import Message
 
