@@ -118,7 +118,7 @@
 
 
 - **Flask框架扩展(数据库扩展): pip install flask-migrate**  
-    - flask-migrate 依赖于 flask-script [需安装: pip install flask-script]
+    - flask-migrate 依赖于 flask-script `需安装: pip install flask-script`
     - from flask-migrate import Migrate  # 数据库的迁移,回退...等工具
     - from flask-migrate import MigrateCommand  # 数据库执行者命令
 
