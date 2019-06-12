@@ -41,7 +41,7 @@ result = string.hexdigits
 # result = string.whitespace
 # '\t\n\x0b\x0c\r
 
-#  生成随机数
+#  使用string模块生成随机字符串
 import random,string
 def genRandomString(slen=10):
     return ''.join(random.sample(string.punctuation + string.ascii_letters + string.digits, slen))
@@ -49,3 +49,17 @@ def genRandomString(slen=10):
 res = genRandomString()
 print(res)
 print(''.join(random.sample(string.printable,10)))
+
+# 使用random模块生成随机的数字与字母的字符串
+tmp_list = []
+for i in range(5):
+    u = chr(random.randint(65, 90))  # 生成大写字母
+    l = chr(random.randint(97, 122))  # 生成小写字母
+    n = str(random.randint(0, 9))  # 生成数字，注意要转换成字符串类型
+
+    tmp = random.choice([u, l, n])
+    tmp_list.append(tmp)
+
+print("".join(tmp_list))
+
+
