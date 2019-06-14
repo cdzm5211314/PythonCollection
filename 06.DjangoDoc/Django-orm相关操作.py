@@ -59,19 +59,20 @@
 
 ### 聚合查询和分组查询:
 from django.db.models import Avg, Sum, Max, Min, Count
-# 聚合:
+## 聚合:
 # aggregate()是 QuerySet 的一个终止子句，意思是说，它返回一个包含一些键值对的字典
 # Book.objects.all().aggregate(Avg("price"))
 # Book.objects.aggregate(average_price=Avg('price'))
-# 分组:
+## 分组: annotate()前面是什么就按照什么分组
+# orm中values()和values_list()里面写什么字段,就相当于select查询什么字段
 # Employee.objects.values("dept").annotate(avg=Avg("salary").values(dept, "avg")
 
 
 ### F 查询和 Q 查询
-# F() 的实例可以在查询中引用字段，来比较同一个 model 实例中两个不同字段的值
+## F() 的实例可以在查询中引用字段，来比较同一个 model 实例中两个不同字段的值
 # from django.db.models import F
 # Book.objects.filter(commnet_num__gt=F('keep_num'))
-# 可以组合& 和|  操作符以及使用括号进行分组来编写任意复杂的Q 对象。同时，Q 对象可以使用~ 操作符取反，这允许组合正常的查询和取反(NOT) 查询
+## 可以组合& 和|  操作符以及使用括号进行分组来编写任意复杂的Q 对象。同时，Q 对象可以使用~ 操作符取反，这允许组合正常的查询和取反(NOT) 查询
 # from django.db.models import Q
 # Book.objects.filter(Q(authors__name="小仙女")|Q(authors__name="小魔女"))  # 查询作者名是小仙女或小魔女的
 
