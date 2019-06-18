@@ -33,3 +33,9 @@ pickle_f = pickle.loads(pickle_x)
 print(pickle_f,type(pickle_f))  # {'name': 'zhangsan', 'age': 25} <class 'dict'>
 
 
+### html:js语法中
+# JSON 值可以是：数字（整数或浮点数）、字符串（在双引号中）、逻辑值（true 或 false）、数组（在方括号中）、对象（在花括号中）、null
+# JSON.parse(): 是将json格式的字符串转换成json对象
+# JSON.stringify(): 是将json对象转换成json格式的字符串
+
+
